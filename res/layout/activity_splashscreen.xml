@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_background"
+    tools:context="com.example.trackingproject.Splashscreen"
+    tools:ignore="MergeRootFrame" >
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="Welcome to Tracking App"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffff0000"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/id"
+        android:layout_marginBottom="34dp"
+        android:layout_marginRight="26dp"
+        android:text="Developed By:Harshit"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffff0000"
+        android:textStyle="bold|italic" />
+
+    </RelativeLayout>
+

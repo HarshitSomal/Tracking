@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#33CCFF"
+     >
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#333399"
+        android:layout_marginTop="18dp"
+        android:textStyle="bold"
+        android:text="About Us"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/har" />
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_marginLeft="24dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="Name :"
+        android:textColor="#0033CC"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/id"
+        android:layout_alignBottom="@+id/id"
+        android:layout_alignLeft="@+id/name"
+        android:layout_marginLeft="25dp"
+        android:text="Harshit Somal"
+        android:textColor="#0033CC"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignLeft="@+id/id"
+        android:text="Hobbies:"
+        android:textColor="#0033CC"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignLeft="@+id/textView3"
+        android:text="Programming"
+        android:textColor="#0033CC"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_below="@+id/textView7"
+        android:layout_marginTop="80dp"
+        android:text="Developed By:Harshit"
+        android:textAlignment="textStart"
+        android:textColor="#333399"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView 
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView7"
+        android:layout_alignRight="@+id/name"
+        android:layout_marginBottom="20dp"
+        android:text="About Appication"
+        android:textColor="#0033CC"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical|center"
+        android:text="This Application is used to trace users current location and then inform about the current location to a person whose number is set by the user by sending SMS manually or automatically"
+        android:textColor="#0033CC"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.trackingproject.Loginpage" >
+
+  
+      <item 
+          android:id="@+id/up"
+          android:title="Update"
+          ></item>
+       <item android:id="@+id/msms"
+            android:title="Manual SMS"></item>
+        
+        <item android:id="@+id/auto"
+            android:title="Automatic SMS"></item>
+        
+        <item android:id="@+id/About"
+            android:title="About Application"></item>
+        <item android:id="@+id/log"
+            android:title="Logout"></item>
+        
+        
+</menu>

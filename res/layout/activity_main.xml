@@ -1,0 +1,159 @@
+
+
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#33CCFF"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    tools:context="com.example.trackingproject.MainActivity"
+    tools:ignore="MergeRootFrame">
+    
+  
+
+     
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:text="Login"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#333399"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+  
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/usern"
+        android:layout_below="@+id/usern"
+        android:layout_marginTop="30dp"
+        android:text="Password"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#333399"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/m"
+        android:ems="10"
+       
+        android:inputType="textPassword"
+        android:textColor="#0033CC"
+         android:hint="Enter Password"
+        android:textStyle="italic" >
+
+    </EditText>
+
+    <Button
+        android:id="@+id/can"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/log"
+        android:layout_marginTop="16dp"
+        android:textColor="#333399"
+        android:onClick="cancel"
+         android:textSize="25dp"
+        android:textStyle="bold"
+        android:background="#0066FF"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/log"
+        style="@style/AppTheme"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/p"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="#0066FF"
+        android:onClick="login"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+         android:textSize="25dp"
+        android:textStyle="bold"
+        android:text="Login"
+        android:textColor="#333399" />
+
+    <TextView
+        android:id="@+id/usern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="58dp"
+        android:text="Mobile No."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#333399"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/usern"
+        android:layout_alignBottom="@+id/usern"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignRight="@+id/log"
+        android:ems="10"
+        android:hint="Enter Mobile no."
+        android:inputType="phone"
+        android:textColor="#0033CC"
+        android:textStyle="italic" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/sear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkb"
+        android:layout_toRightOf="@+id/name"
+        android:onClick="forgetPassword"
+        android:background="#0066FF"
+        android:textColor="#333399"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:text="Forgot password" />
+
+    <CheckBox
+        android:id="@+id/checkb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/can"
+        android:layout_below="@+id/can"
+        android:text="Remember me" 
+        android:textStyle="bold"
+        android:textColor="#333399" />
+
+    <Button
+        android:id="@+id/sig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sear"
+        android:layout_alignRight="@+id/textView3"
+        android:background="#0066FF"
+        android:onClick="signup"
+        android:text="Signup"
+        android:textColor="#333399"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+  
+</RelativeLayout>
